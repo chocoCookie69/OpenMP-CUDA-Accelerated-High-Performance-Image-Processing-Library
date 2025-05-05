@@ -26,9 +26,8 @@ This project is a high-performance image processing library written in C++ and C
 | Adaptive Threshold   | 2419                          | 1202                         | 38965                         | 1885                         |
 
 ## Screenshot sample from the experiments
-![low res](https://github.com/user-attachments/assets/27328590-5d94-41fd-96e8-65fcab67ca06)
-
-![high res](https://github.com/user-attachments/assets/007f48a9-857d-4e0b-b398-1c32019b1845)
+![low res](https://github.com/user-attachments/assets/1bea891b-b715-4dba-9a86-f7782467d4d2)
+![high res](https://github.com/user-attachments/assets/2a1c2250-1f6f-4c3e-95c1-3a42ab048f82)
 
 ## Observations from Benchmark Results
 
