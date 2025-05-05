@@ -27,6 +27,7 @@ This project is a high-performance image processing library written in C++ and C
 
 ## Screenshot sample from the experiments
 ![low res](https://github.com/user-attachments/assets/1bea891b-b715-4dba-9a86-f7782467d4d2)
+
 ![high res](https://github.com/user-attachments/assets/2a1c2250-1f6f-4c3e-95c1-3a42ab048f82)
 
 ## Observations from Benchmark Results
