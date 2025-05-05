@@ -33,9 +33,7 @@ This project is a high-performance image processing library written in C++ and C
 
 ### CUDA
 - Install [CUDA Toolkit](https://developer.nvidia.com/cuda-downloads) (Recommended: CUDA 12.x).
-- After installation, add the following to your system's `Path` environment variable:
-  - `C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.x\bin`
-  - `C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.x\libnvvp`
+- After installation, add to your system's `Path` environment variable.
 
 ### OpenCV
 - Download OpenCV from [https://opencv.org/releases](https://opencv.org/releases) and extract it.
