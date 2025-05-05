@@ -24,3 +24,33 @@ This project is a high-performance image processing library written in C++ and C
 | Gaussian Blur        | X           | Y          |
 | Edge Detection       | X           | Y          |
 | Adaptive Threshold   | X           | Y          |
+
+## 🔧 Installation Requirements
+
+### C++ (Compiler)
+- Install [Visual Studio](https://visualstudio.microsoft.com/) with **Desktop development with C++** workload.
+- Ensure `cl.exe` and build tools are in your system PATH.
+
+### CUDA
+- Install [CUDA Toolkit](https://developer.nvidia.com/cuda-downloads) (Recommended: CUDA 12.x).
+- After installation, add the following to your system's `Path` environment variable:
+  - `C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.x\bin`
+  - `C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.x\libnvvp`
+
+### OpenCV
+- Download OpenCV from [https://opencv.org/releases](https://opencv.org/releases) and extract it.
+- Configure the following in your project or CMake:
+  - **Include directory**: `opencv/build/include`
+  - **Library directory**: `opencv/build/x64/vc16/lib`
+  - **DLL runtime directory**: `opencv/build/x64/vc16/bin`
+- Add the DLL path to your system `Path` environment variable.
+
+### OpenMP
+- Comes bundled with Visual Studio C++ compiler.
+- No separate installation needed.
+- Use `#pragma omp parallel for` in code and pass `/openmp` flag if needed.
+
+### Pybind11 (for Python binding)
+Install via pip:
+```bash
+pip install pybind11
