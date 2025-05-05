@@ -17,15 +17,17 @@ This project is a high-performance image processing library written in C++ and C
 - Pybind11 (Python binding)
 - CMake
 
-##Benchmark Results
-| Filter               | OpenMP (ms) | CUDA (ms) |
-|----------------------|-------------|------------|
-| Invert Image         | ~42000      | ~2000      |
-| Gaussian Blur        | X           | Y          |
-| Edge Detection       | X           | Y          |
-| Adaptive Threshold   | X           | Y          |
+## Benchmark Results
+|       Images         |   Image 1 (res: 1013 x 1048)  |  Image 1 (res: 3417 x 5125)   |
+|----------------------|-------------------------------|-------------------------------|
+| Filter               |  OpenMP (ms)   |  CUDA (ms)   |  OpenMP (ms)   |   CUDA (ms)  |
+|----------------------|----------------|--------------|----------------|--------------|
+| Invert Image         |       171      |     1192     |     2982       |    675       |
+| Gaussian Blur        |       1802     |     1188     |     1303       |    30351     |
+| Edge Detection       |       325      |     1208     |     4413       |    1618      |
+| Adaptive Threshold   |       2419     |     1202     |     38965      |    1885      |
 
-## 🔧 Installation Requirements
+## Installation Requirements
 
 ### C++ (Compiler)
 - Install [Visual Studio](https://visualstudio.microsoft.com/) with **Desktop development with C++** workload.
