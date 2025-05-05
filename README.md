@@ -21,10 +21,24 @@ This project is a high-performance image processing library written in C++ and C
 | Filter               | Image 1 (1013×1048)<br>OpenMP (ms) | Image 1 (1013×1048)<br>CUDA (ms) | Image 2 (3417×5125)<br>OpenMP (ms) | Image 2 (3417×5125)<br>CUDA (ms) |
 |----------------------|-------------------------------|------------------------------|-------------------------------|------------------------------|
 | Invert Image         | 171                           | 1192                         | 2982                          | 675                          |
-| Gaussian Blur        | 1802                          | 1188                         | 1303                          | 30351                        |
+| Gaussian Blur        | 1802                          | 1188                         | 29910                         | 1738                         |
 | Edge Detection       | 325                           | 1208                         | 4413                          | 1618                         |
 | Adaptive Threshold   | 2419                          | 1202                         | 38965                         | 1885                         |
 
+## Observations from Benchmark Results
+
+1. **CUDA generally outperforms OpenMP on large images.**
+   - For the **high-resolution image**, CUDA shows **significant speedups**:
+     - **Adaptive Threshold**: ~20× faster
+     - **Gaussian Blur**: ~17× faster
+     - **Invert Image**: ~4.4× faster
+     - **Edge Detection**: ~2.7× faster
+
+2. **On smaller images (1013×1048), OpenMP sometimes performs better.**
+   - CUDA shows **higher overhead** on small inputs:
+     - **Invert Image**: OpenMP is faster (171 ms vs. 1192 ms)
+     - **Gaussian Blur**: CUDA slightly outperforms OpenMP (1188 ms vs. 1802 ms)
+   - Indicates that CUDA's launch/setup overhead **dominates when image size is small**.
 
 ## Installation Requirements
 
