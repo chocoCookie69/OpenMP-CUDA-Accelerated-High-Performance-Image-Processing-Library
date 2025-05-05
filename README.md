@@ -25,6 +25,11 @@ This project is a high-performance image processing library written in C++ and C
 | Edge Detection       | 325                           | 1208                         | 4413                          | 1618                         |
 | Adaptive Threshold   | 2419                          | 1202                         | 38965                         | 1885                         |
 
+## Screenshot sample from the experiments
+![low res](https://github.com/user-attachments/assets/27328590-5d94-41fd-96e8-65fcab67ca06)
+
+![high res](https://github.com/user-attachments/assets/007f48a9-857d-4e0b-b398-1c32019b1845)
+
 ## Observations from Benchmark Results
 
 1. **CUDA generally outperforms OpenMP on large images.**
