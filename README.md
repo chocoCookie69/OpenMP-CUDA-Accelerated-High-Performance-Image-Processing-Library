@@ -18,13 +18,13 @@ This project is a high-performance image processing library written in C++ and C
 - CMake
 
 ## Benchmark Results
-|       Images         |   Image 1 (res: 1013 x 1048)  |  Image 1 (res: 3417 x 5125)   |
-|----------------------|-------------------------------|-------------------------------|
-| Filter               |  OpenMP (ms)   |  CUDA (ms)   |  OpenMP (ms)   |   CUDA (ms)  |
-| Invert Image         |       171      |     1192     |     2982       |    675       |
-| Gaussian Blur        |       1802     |     1188     |     1303       |    30351     |
-| Edge Detection       |       325      |     1208     |     4413       |    1618      |
-| Adaptive Threshold   |       2419     |     1202     |     38965      |    1885      |
+| Filter               | Image 1 (1013×1048)<br>OpenMP (ms) | Image 1 (1013×1048)<br>CUDA (ms) | Image 2 (3417×5125)<br>OpenMP (ms) | Image 2 (3417×5125)<br>CUDA (ms) |
+|----------------------|-------------------------------|------------------------------|-------------------------------|------------------------------|
+| Invert Image         | 171                           | 1192                         | 2982                          | 675                          |
+| Gaussian Blur        | 1802                          | 1188                         | 1303                          | 30351                        |
+| Edge Detection       | 325                           | 1208                         | 4413                          | 1618                         |
+| Adaptive Threshold   | 2419                          | 1202                         | 38965                         | 1885                         |
+
 
 ## Installation Requirements
 
