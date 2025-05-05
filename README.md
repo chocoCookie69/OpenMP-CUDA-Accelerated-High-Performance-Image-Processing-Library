@@ -2,14 +2,14 @@
 
 This project is a high-performance image processing library written in C++ and CUDA, supporting real-time filtering, transformations, and noise reduction. It is also Python-bindable via Pybind11.
 
-##Features
+## Features
 - **Real-time Filtering**: Gaussian Blur, Edge Detection, Adaptive Thresholding.
 - **Performance Optimizations**:
   - OpenMP multithreading on CPU.
   - CUDA acceleration for GPU-based filters.
 - **Modular API** for easy integration into C++ or Python.
 
-##Tech Stack
+## Tech Stack
 - C++
 - CUDA
 - OpenCV
